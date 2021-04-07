@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@lazyelements-demo/domain1/bootstrapping": [
+        "libs/domain1/bootstrapping/src/index.ts"
+      ],
+      "@lazyelements-demo/shared/lazy-loader": [
+        "libs/shared/lazy-loader/src/index.ts"
+      ],
+      "@lazyelements-demo/domain1/lazy-hello": [
+        "libs/domain1/lazy-hello/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

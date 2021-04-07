@@ -145,6 +145,81 @@
           }
         }
       }
+    },
+    "domain1-bootstrapping": {
+      "projectType": "library",
+      "root": "libs/domain1/bootstrapping",
+      "sourceRoot": "libs/domain1/bootstrapping/src",
+      "prefix": "lazyelements-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain1/bootstrapping/src/**/*.ts",
+              "libs/domain1/bootstrapping/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain1/bootstrapping"],
+          "options": {
+            "jestConfig": "libs/domain1/bootstrapping/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "shared-lazy-loader": {
+      "projectType": "library",
+      "root": "libs/shared/lazy-loader",
+      "sourceRoot": "libs/shared/lazy-loader/src",
+      "prefix": "lazyelements-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/lazy-loader/src/**/*.ts",
+              "libs/shared/lazy-loader/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/lazy-loader"],
+          "options": {
+            "jestConfig": "libs/shared/lazy-loader/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "domain1-lazy-hello": {
+      "projectType": "library",
+      "root": "libs/domain1/lazy-hello",
+      "sourceRoot": "libs/domain1/lazy-hello/src",
+      "prefix": "lazyelements-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain1/lazy-hello/src/**/*.ts",
+              "libs/domain1/lazy-hello/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain1/lazy-hello"],
+          "options": {
+            "jestConfig": "libs/domain1/lazy-hello/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

@@ -1,34 +1,25 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "lazyelements-demo",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
   "projects": {
-    "demoapp": {
-      "tags": []
-    },
-    "demoapp-e2e": {
-      "tags": [],
-      "implicitDependencies": ["demoapp"]
-    }
+    "demoapp": { "tags": [] },
+    "demoapp-e2e": { "tags": [], "implicitDependencies": ["demoapp"] },
+    "domain1-bootstrapping": { "tags": [] },
+    "shared-lazy-loader": { "tags": [] },
+    "domain1-lazy-hello": { "tags": [] }
   }
 }
