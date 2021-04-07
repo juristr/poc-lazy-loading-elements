@@ -23,6 +23,12 @@
       ],
       "@lazyelements-demo/domain1/lazy-hello": [
         "libs/domain1/lazy-hello/src/index.ts"
+      ],
+      "@lazyelements-demo/domain2/bootstrapping": [
+        "libs/domain2/bootstrapping/src/index.ts"
+      ],
+      "@lazyelements-demo/domain2/lazy-greeting": [
+        "libs/domain2/lazy-greeting/src/index.ts"
       ]
     }
   },

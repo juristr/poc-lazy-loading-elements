@@ -220,6 +220,56 @@
           }
         }
       }
+    },
+    "domain2-bootstrapping": {
+      "projectType": "library",
+      "root": "libs/domain2/bootstrapping",
+      "sourceRoot": "libs/domain2/bootstrapping/src",
+      "prefix": "lazyelements-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain2/bootstrapping/src/**/*.ts",
+              "libs/domain2/bootstrapping/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain2/bootstrapping"],
+          "options": {
+            "jestConfig": "libs/domain2/bootstrapping/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "domain2-lazy-greeting": {
+      "projectType": "library",
+      "root": "libs/domain2/lazy-greeting",
+      "sourceRoot": "libs/domain2/lazy-greeting/src",
+      "prefix": "lazyelements-demo",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/domain2/lazy-greeting/src/**/*.ts",
+              "libs/domain2/lazy-greeting/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/domain2/lazy-greeting"],
+          "options": {
+            "jestConfig": "libs/domain2/lazy-greeting/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -10,6 +10,7 @@ export class PartialLoaderService {
   constructor(private http: HttpClient) {}
 
   getPartial(name: string) {
+    // obviously this should be cached to not fetch them all the time
     return this.http.get(`/assets/partials/${name}.html`, {
       responseType: 'text',
     });

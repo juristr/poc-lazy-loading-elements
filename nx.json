@@ -20,6 +20,8 @@
     "demoapp-e2e": { "tags": [], "implicitDependencies": ["demoapp"] },
     "domain1-bootstrapping": { "tags": [] },
     "shared-lazy-loader": { "tags": [] },
-    "domain1-lazy-hello": { "tags": [] }
+    "domain1-lazy-hello": { "tags": [] },
+    "domain2-bootstrapping": { "tags": [] },
+    "domain2-lazy-greeting": { "tags": [] }
   }
 }

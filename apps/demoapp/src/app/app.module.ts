@@ -9,7 +9,7 @@ import { PartialComponent } from './partial/partial.component';
 import { SafePipe } from './partial/safe-pipe.pipe';
 
 import { Domain1BootstrappingModule } from '@lazyelements-demo/domain1/bootstrapping';
-import { Domain1LazyHelloModule } from '@lazyelements-demo/domain1/lazy-hello';
+import { Domain2BootstrappingModule } from '@lazyelements-demo/domain2/bootstrapping';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, PartialComponent, SafePipe],
@@ -35,7 +35,7 @@ import { Domain1LazyHelloModule } from '@lazyelements-demo/domain1/lazy-hello';
     // bootstrapping references from the various feature modules
     // that want to contribute lazy registrations
     Domain1BootstrappingModule,
-    // Domain1LazyHelloModule,
+    Domain2BootstrappingModule,
   ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
