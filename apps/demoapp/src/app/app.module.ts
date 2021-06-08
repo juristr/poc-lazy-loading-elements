@@ -10,6 +10,7 @@ import { SafePipe } from './partial/safe-pipe.pipe';
 
 import { Domain1BootstrappingModule } from '@lazyelements-demo/domain1/bootstrapping';
 import { Domain2BootstrappingModule } from '@lazyelements-demo/domain2/bootstrapping';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, PartialComponent, SafePipe],
@@ -36,6 +37,7 @@ import { Domain2BootstrappingModule } from '@lazyelements-demo/domain2/bootstrap
     // that want to contribute lazy registrations
     Domain1BootstrappingModule,
     Domain2BootstrappingModule,
+    BrowserAnimationsModule,
   ],
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
